@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>12 Pubs of Xmas</title>
+        <meta name="description" content="The 12 Pubs of Christmas Mobile Website">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="css/main.min.css">
+
+
+
+        <!-- Scripts -->
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <!-- <script src="js/main-min.js"></script> -->
+        <script src="js/main.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <!-- Google maps API -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAvlR6Jd3_SZ8Zw4izQt_JXXtlwiaqS_mo&sensor=false"></script>
+    </head>
+    <body>
+
+
+
+
+        <!-- 12 Pubs Splash page  ================================= -->
+        <div data-role="page" data-theme="a" id="SplashPage">
+            <div data-role="content">
+
+               <!-- Add splash layer and fade out after x -->
+               <div class="ir splashIntro">
+                   12 Pubs of Xmas
+               </div>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+        <!-- / 12 Pubs Splash page  ================================= -->
+
+
+
+
+        <!--  The Pubs ========================================= -->
+        <div data-role="page" data-theme="a" id="Homepage">
+            <div data-role="content">
+
+               <h1 class="logo ir">
+                    12 Pubs of Xmas
+                </h1>
+
+                <ul id="ThePubsList" data-role="listview" data-inset="true" data-filter="true" data-filter-theme="f" data-filter-placeholder="Filter by pub or time...">
+                </ul>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+        <!-- / The Pubs ========================================= -->
+
+
+
+
+        <!--  The Pubs Details Page ===================================== -->
+        <div data-role="page" data-theme="a" id="ThePubsDetailsPage">
+            <!-- Standard header -->
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <h1>
+                    12 Pubs of Xmas
+                </h1>
+                <a data-role="button" href="#Homepage" data-icon="back" data-iconpos="left" data-iconshadow="false" class="ui-btn-left">
+                </a>
+            </div>
+            <!-- /Standard header -->
+            <div data-role="content">
+
+                <div class="content-wrapper ui-btn-corner-all" data-theme="c">
+
+                    <div class="mapCanvas half-map"></div>
+
+                    <!-- Blue title -->
+                    <h2 id="pubTitle">
+                    </h2>
+                    <h3>Description</h3>
+                    <p class="pub-description"></p>
+                </div>
+                <!-- /content-wrapper  -->
+            </div><!-- /content -->
+        </div><!-- /page -->
+
+
+
+
+    </body>
+</html>
+
