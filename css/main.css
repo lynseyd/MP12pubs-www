@@ -44,6 +44,9 @@ a:hover{color:#FFF}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
 
+img{vertical-align:middle}
+fieldset{border:0;margin:0;padding:0}
+textarea{resize:vertical}
 
 
 
@@ -150,6 +153,9 @@ a:active,a:hover{outline:0}
         margin-top: -16px!important;
         width: 32px;
       }
+
+
+
 
 /* make sure no shadows sneak in */
 .ui-icon-shadow {box-shadow: none}
@@ -305,11 +311,25 @@ a.ui-btn.ui-btn-icon-notext .ui-icon.ui-icon-target {
 
 /* ====== Common styles ===================================================== */
 
+.big-nav-icon
+{
+    background:url(../img/common/splashNav.png);
+    width:92px;
+    height:96px;
+    margin:0 auto
+}
 
     .ui-icon.ui-icon-back
     {
         background-position:-102px -87px
     }
+
+    .ui-icon.ui-icon-home
+    {
+        background-position:-57px -87px
+    }
+
+
 
 ul
 {
@@ -336,44 +356,179 @@ ul
 
 
 
+
+
 /* Maps */
+.header-map{
+    height: 124px;
+    width: 100%
+}
+.full-map{
+    height: 600px;
+    width: 100%
+}
 .half-map{
     height: 300px;
     width: 100%
 }
+
+.head-map-wrap{
+    height: 124px;
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.head-map-wrap img{
+    width: 100%;
+}
+
+.full-map-link-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+
+
 .mapCanvas h4{color:#000;padding-left: 0}
 .mapCanvas p{color:#000}
 .mapCanvas a{color:#000}
 
 
-/* ====== ￼Home - Landing page ========================================== */
+/* ====== ￼1.0 Home - Landing page ========================================== */
 
 
     h1.logo{
       text-align: center;
-      background: url('../img/common/Logo.png') no-repeat;
+      background: url('../img/common/Logo.png');
       width: 150px;
       height: 96px;
       display: block;
       margin:0 auto 10px;
     }
 
-    .splashIntro{
-      background:  url(../img/common/Crest.png) no-repeat center center, #89c5bb;
-      background:  url(../img/common/Crest.png) no-repeat center center, -moz-linear-gradient(top,  #89c5bb 0%, #56ac9d 100%);
-        background: url(../img/common/Crest.png) no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#89c5bb), color-stop(100%,#56ac9d));
-        background: url(../img/common/Crest.png) no-repeat center center, -webkit-linear-gradient(top,  #89c5bb 0%,#56ac9d 100%);
-        background: url(../img/common/Crest.png) no-repeat center center, -o-linear-gradient(top,  #89c5bb 0%,#56ac9d 100%);
-        background: url(../img/common/Crest.png) no-repeat center center, -ms-linear-gradient(top,  #89c5bb 0%,#56ac9d 100%);
-        background: url(../img/common/Crest.png) no-repeat center center, linear-gradient(to bottom,  #89c5bb 0%,#56ac9d 100%);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+    /* Nav grid */
+    .ui-grid-a > div {
+        margin-bottom: 10px;
     }
+    .ui-grid-a .ui-block-a{
+        padding-right: 5px
+    }
+    .ui-grid-a .ui-block-b{
+        padding-left: 5px
+    }
+        .ui-grid-a .navBox
+        {
+            color: #fff;
+            display: block;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+            padding:18px 5px 18px;
+            width:100%;
+            -webkit-border-radius:1em;
+            -moz-border-radius:1em;
+            border-radius:1em;
+            background:#7cb2aa;
+            text-align:center;
+            text-decoration: none;
+        }
+        .ui-grid-a .navBox:hover
+        {
+            text-decoration: none;
+            color: #fff;
+            background-color:#638e88;
+        }
+
+        .navBox span{background: url(../img/common/splashNav.png);width:96px;height:96px;margin: 0 auto}
+            .navBox  .schedule{         background-position: 5px          0      }
+            .navBox  .PubMap{        background-position: -105px       0      }
+            .navBox  .TheRules{       background-position: 0px          -108px }
+            .navBox  .Iflost{  background-position: -105px       -105px }
+            .navBox  .staff{            background-position: 5px          -216px }
+            .navBox  .comments{         background-position: -106px       -216px }
+
+        .navBox strong {
+          display: block;
+          padding: 12px 0 5px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .navBox p{
+            color: #ffb9c5;
+            font-size: 0.667em;
+            line-height: 1.067em;
+            font-weight: normal;
+            margin: 0;
+            height: 2em
+        }
 
 
+
+        .splashIntro{
+          background:  url(../img/common/Crest.png) no-repeat center center, #89c5bb;
+          background:  url(../img/common/Crest.png) no-repeat center center, -moz-linear-gradient(top,  #89c5bb 0%, #56ac9d 100%);
+            background: url(../img/common/Crest.png) no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#89c5bb), color-stop(100%,#56ac9d));
+            background: url(../img/common/Crest.png) no-repeat center center, -webkit-linear-gradient(top,  #89c5bb 0%,#56ac9d 100%);
+            background: url(../img/common/Crest.png) no-repeat center center, -o-linear-gradient(top,  #89c5bb 0%,#56ac9d 100%);
+            background: url(../img/common/Crest.png) no-repeat center center, -ms-linear-gradient(top,  #89c5bb 0%,#56ac9d 100%);
+            background: url(../img/common/Crest.png) no-repeat center center, linear-gradient(to bottom,  #89c5bb 0%,#56ac9d 100%);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+
+/* ====== 2.0 My Schedule - Login ========================================= */
+
+
+#MyScheduleLogin{}
+
+  .schedule-icon
+  {
+    background-position:0 0;
+    margin-top:7px
+  }
+
+  #MyScheduleLogin .ui-field-contain input.ui-input-text
+  {
+    width:100%;
+    padding:.8em 1em;
+    font-weight:700
+  }
+
+  #MyScheduleLogin h2
+  {
+    margin:0;
+    letter-spacing:-.02em;
+    line-height:2em
+  }
+
+  #MyScheduleLogin p
+  {
+    margin:0 0 1.5em;
+    padding:0 10%
+  }
+
+  #MyScheduleLogin p.cenText
+  {
+    margin:1em 0 0
+  }
+
+
+
+
+
+
+
+/* ====== 2.1 Weekly Schedule Overview ========================================= */
+
+
+/* ListView styles - schedule etc */
 .ui-content .ui-listview-inset
 {
   margin: 0 0 1em 0;
@@ -384,6 +539,9 @@ ul
     background:#FFF
 }
 
+
+
+    /* ListView styles - C - Schedule list */
     .ui-listview .ui-bar-c {
       background: #4B6567;
       color: #FFFFFF;
@@ -473,6 +631,17 @@ ul
                 }
 
 
+
+
+
+
+
+
+
+
+/* ======2.2 Daily Schedule ========================================= */
+
+
 /* ListView styles */
 .ui-listview .ui-bar-m {
   background: #4B6567;
@@ -493,9 +662,43 @@ ul
     display:block;
 }
 
+    #MyDailySchedule .ui-li.ui-btn-up-c i{
+        color: #999
+    }
+    #MyDailySchedule .ui-li small{
+        font-size: 0.867em
+    }
 
 
 
+
+
+
+
+#MyDailySchedule .selected.ui-li.ui-btn-up-c strong,
+#MyDailySchedule .selected.ui-li.ui-btn-up-c span,
+#MyDailySchedule .selected.ui-li.ui-btn-up-c i,
+#MyDailySchedule .ui-li.ui-btn-hover-c strong,
+#MyDailySchedule .ui-li.ui-btn-hover-c span,
+#MyDailySchedule .ui-li.ui-btn-hover-c i
+{
+    color: #FFF;
+}
+
+
+.ui-li-link-alt > .ui-btn-inner > .ui-btn > .ui-btn-inner > .ui-icon.ui-icon-add-activity,
+.ui-li-link-alt > .ui-btn-inner > .ui-btn > .ui-btn-inner > .ui-icon.ui-icon-remove-activity
+ {
+  background-position: -196px -25px;
+  height: 32px;
+  margin-top: -16px;
+  width: 32px;
+}
+
+.ui-li-link-alt > .ui-btn-inner > .ui-btn > .ui-btn-inner > .ui-icon.ui-icon-remove-activity
+{
+  background-position: -237px -76px;
+}
 
 .ui-li-link-alt > .ui-btn-inner {
   background: none repeat scroll 0 0 transparent;
@@ -511,6 +714,81 @@ li.ui-btn > a.ui-li-link-alt{bottom:0;height:100%;margin:0;padding:0;width:55px;
 
 
 
+
+
+
+#MyDailySchedule .ui-listview.inline .ui-btn-inner .ui-btn-text p{
+  font-weight: bold;
+}
+
+#MyDailySchedule .ui-listview.inline .ui-btn-inner .ui-btn-text p small,
+#MyDailySchedule .ui-listview.inline .ui-btn-inner .ui-btn-text p i{
+  font-weight: normal;
+}
+
+
+
+
+
+
+/* ======2.2a Activity List ========================================= */
+.swipe-header
+{
+  width:100%;
+  height:60px;
+  overflow:hidden;
+  display:block;
+  background:#4B6567;
+  color:#fff;
+  position: relative;
+}
+
+  .swipe-header span {
+    background: url("../img/common/sprite.png") no-repeat scroll -64px 0 transparent;
+    bottom: 0;
+    height: 10px;
+    left: 50%;
+    margin-left: -12px;
+    position: absolute;
+    width: 25px;
+  }
+
+
+  .swipe-header ul
+  {
+    padding: 0;
+    position:absolute;
+  }
+
+    .swipe-header ul li {
+      float:left;
+      line-height: 1.2em;
+      padding: 10px 0 0;
+      text-align: center;
+      vertical-align: top;
+      width: 160px;/* Updates dynamically to 1/3rd of page width */
+      height:60px;
+    }
+
+ul.no-round-top,ul.no-round-top .ui-corner-top
+{
+  border-top-left-radius:0;
+  border-top-right-radius:0
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======2.4 Activity Details ========================================= */
+
+/*#ActivityDetails */
 .content-wrapper{
     overflow: hidden;
     margin: 0 0 20px 0;
@@ -572,7 +850,195 @@ li.ui-btn > a.ui-li-link-alt{bottom:0;height:100%;margin:0;padding:0;width:55px;
 
 
 
-/* ====== ThePubs ========================================= */
+
+
+
+
+/* ====== 3.0 Campus Map ========================================= */
+
+.ui-bar-s{
+  background: #c43331;
+  background: -moz-linear-gradient(top,  #c43331 19%, #962725 89%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,#c43331), color-stop(89%,#962725));
+  background: -webkit-linear-gradient(top,  #c43331 19%,#962725 89%);
+  background: -o-linear-gradient(top,  #c43331 19%,#962725 89%);
+  background: -ms-linear-gradient(top,  #c43331 19%,#962725 89%);
+  background: linear-gradient(to bottom,  #c43331 19%,#962725 89%);
+}
+
+.ui-input-search.ui-icon-searchfield.ui-body-s {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7) inset;
+  display: inline-block;
+  width: 80%;
+}
+
+
+#PubMap a.locate-me-btn {
+   float: right;
+   margin: 0
+}
+
+
+.mapCanvas #content h3, .mapCanvas #content a{
+  color: #333
+}
+
+
+
+/* ====== 3.1 Building Info ========================================= */
+
+.open-hours{
+  margin-bottom: 1em
+}
+.open-hours span
+{
+    display:inline-block;
+    width:100px
+}
+
+
+
+
+
+
+
+/* ====== 4.0 Facilities ========================================= */
+
+h2.big-icon {
+  margin-bottom: 0.75em;
+  padding-left: 55px;
+  position: relative;
+}
+    h2.big-icon .icon {
+      background: url("../img/common/sprite.png") no-repeat;
+      height: 42px;
+      left: 5px;
+      margin-top: -21px;
+      position: absolute;
+      top: 50%;
+      width: 42px;
+    }
+
+    h2.big-icon .icon-food-drink.icon{
+        background-position: -4px -75px}
+
+    h2.big-icon .icon-IT-services.icon{
+        background-position: -4px -25px}
+
+
+#Facilities ul{margin-bottom: 30px}
+
+
+
+
+
+
+
+
+
+
+/* ====== 4.1 Facility Index ========================================= */
+
+.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+  padding-top: 0;
+  font-size: 1.200em
+}
+
+
+.tabbed-buttons .ui-grid-a{
+  margin-bottom: 15px
+}
+
+.tabbed-buttons .ui-grid-a .ui-block-a{
+  padding:0;
+
+}
+.tabbed-buttons .ui-grid-a .ui-block-b {
+  padding:0;
+
+}
+
+
+.tabbed-buttons ul.ui-grid-a a.ui-state-persist span.ui-btn-inner{
+  background: #1ab2e3;
+  background: -moz-linear-gradient(top,  #1ab2e3 0%, #06abe1 2%, #0bade1 5%, #0bade1 48%, #0bafe2 49%, #0bb7e5 49%, #0bccee 95%, #06cced 98%, #1ad1ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1ab2e3), color-stop(2%,#06abe1), color-stop(5%,#0bade1), color-stop(48%,#0bade1), color-stop(49%,#0bafe2), color-stop(49%,#0bb7e5), color-stop(95%,#0bccee), color-stop(98%,#06cced), color-stop(100%,#1ad1ef));
+  background: -webkit-linear-gradient(top,  #1ab2e3 0%,#06abe1 2%,#0bade1 5%,#0bade1 48%,#0bafe2 49%,#0bb7e5 49%,#0bccee 95%,#06cced 98%,#1ad1ef 100%);
+  background: -o-linear-gradient(top,  #1ab2e3 0%,#06abe1 2%,#0bade1 5%,#0bade1 48%,#0bafe2 49%,#0bb7e5 49%,#0bccee 95%,#06cced 98%,#1ad1ef 100%);
+  background: -ms-linear-gradient(top,  #1ab2e3 0%,#06abe1 2%,#0bade1 5%,#0bade1 48%,#0bafe2 49%,#0bb7e5 49%,#0bccee 95%,#06cced 98%,#1ad1ef 100%);
+}
+
+
+.tabbed-buttons ul.ui-grid-a a .ui-btn-inner {
+  height: 42px;
+  line-height: 42px;
+  overflow: visible;
+  padding: 0;
+}
+
+
+
+.tabbed-buttons ul.ui-grid-a .ui-block-a .ui-btn-inner,
+.ui-navbar li.ui-block-a .ui-btn
+{
+  -webkit-border-top-left-radius: 0.6em;
+  -webkit-border-bottom-left-radius: 0.6em;
+  -moz-border-radius-topleft: 0.6em;
+  -moz-border-radius-bottomleft: 0.6em;
+  border-top-left-radius: 0.6em;
+  border-bottom-left-radius: 0.6em;
+}
+.tabbed-buttons ul.ui-grid-a .ui-block-b .ui-btn-inner,
+.ui-navbar li.ui-block-b .ui-btn
+{
+  -webkit-border-top-right-radius: 0.6em;
+  -webkit-border-bottom-right-radius: 0.6em;
+  -moz-border-radius-topright: 0.6em;
+  -moz-border-radius-bottomright: 0.6em;
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+}
+
+
+
+.ui-btn-inner .ui-icon.ui-icon-current-tab {
+  background-position: -45px 0;
+  left: 50%;
+  margin-left: -9px;
+  position: absolute;
+  top: 100%;
+}
+
+
+/* ====== 4.2 Facility Page ========================================= */
+h4{
+    color: #333333;
+    padding: 0 0 0 15px;
+    margin: 0;
+    line-height:1.77em
+}
+.menu-list
+    {
+        line-height:1.77em;
+        margin-bottom: 1em
+    }
+    .menu-list span
+    {
+        display:inline-block;
+        width:200px;
+        padding-right: 10%
+    }
+
+
+
+
+
+
+
+
+/* ====== 5.0 ThePubs ========================================= */
+
+
 .ui-listview-filter-inset {
   margin: 0 0 15px 0;
 }
@@ -621,11 +1087,205 @@ li.ui-btn > a.ui-li-link-alt{bottom:0;height:100%;margin:0;padding:0;width:55px;
 
 
 
+
+/* ====== 5.1 Department Page ========================================= */
+p.phone-list
+    {
+        line-height:1.77em
+    }
+    p.phone-list span
+    {
+        display:inline-block;
+        min-width:50px;
+        padding-right: 10px
+    }
+    p.phone-list a.ui-link, p.phone-list a {
+        color: #4B6567!important
+    }
+
+p.dept-address{
+    color: #d3808e
+}
+
+
+
+
+      .ui-listview .ui-btn-inner .ui-btn-text h3{
+        margin: 0;
+        padding: 0 5% 0 0;
+      }
+      .ui-listview .ui-btn-inner .ui-btn-text p{
+        color: #7F7F7F;
+        font-size: 0.833em;
+        position: relative;
+        top: 3px;
+        margin: 0;
+        white-space: normal;
+      }
+
+
+
+
+
+
+
+/* ====== 6.0 Staff Directories ========================================= */
+#StaffDirectory .ui-li.ui-li-static.ui-btn-up-a {
+    background-color: #FFFFFF;
+}
+
+
+#StaffDirectory .ui-listview .ui-btn-inner .ui-btn-text h3{
+  line-height: 1em;
+}
+
+
+#StaffDirectory p.ui-li-desc {
+    color: #7F7F7F;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+#StaffDirectory li.ui-li.ui-li-divider.ui-bar-b {
+    background-color: #4B6567;
+    background-image: none;
+}
+
+
+
+
+
+/* ====== 7.0 Comment Box - Login ========================================= */
+.big-nav-icon.comments
+{
+  background-position:-106px -216px
+}
+
+
+
+
+
+
+
+
+
+/* ====== 7.1 Comment Box ========================================= */
+.camera-box{
+    background-color: #e1e0e0;
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    margin-top: -25px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.camera-box a{
+    background:         url(../img/common/cameraIcon.png)       no-repeat center center,
+                        url(../img/common/hStitch.gif)          repeat-x top center,
+                        url(../img/common/hStitch.gif)          repeat-x bottom center,
+                        url(../img/common/vStitch.gif)          repeat-y top left,
+                #b7b7b7 url(../img/common/vStitch.gif)          repeat-y top right;
+    border: solid 2px #b7b7b7;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#txt-comment{
+    border: none;
+    background: #FFF;
+    color: #7f7f7f;
+    width: 100%;
+    padding: 15px;
+
+}
+
+
+
+
+
+/* ====== 7.2 Comment Thanks ========================================= */
+.comment-thanks
+{
+    padding:30px 20px;
+    position: relative;
+}
+
+
+    .comment-thanks p{
+        padding-left: 110px;
+    }
+    .comment-thanks h3
+    {
+        font-size:1.733em;
+        line-height: 1em;
+        padding-bottom: 14px;
+        padding-left: 110px;
+    }
+
+
+    .comment-thanks .orangeCheck{
+      background: url(../img/common/orangeCheck.png) no-repeat;
+      width: 93px;
+      height: 93px;
+      position: absolute;
+      left: 15px;
+      top: 30px
+    }
+
+
+
+
+
+
+
+/* ======== Demo notice ---------✂---------------- */
+
+span.demoNotice {
+  background: #3C0710;
+  border-bottom: 1px solid #b95465;
+  border-top: 1px solid #b95465;
+  color: #B86976;
+  font-size: 80%;
+  height: 20px;
+  left: 0;
+  line-height: 20px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+  top: 110px;
+}
+  .ui-content {
+    padding-top: 15px;
+  }
+  #Homepage .ui-content{
+    padding-top: 10px;
+  }
+  #Homepage .ui-grid-a{
+    margin-top: 40px
+  }
+
+   /*span.demoNotice { display: none }
+
+/* ======== Demo notice ---------✂---------------- */
+
+
+
+
+
+
 /* ====== Retina ========================================= */
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1) {
+
+
 
 
     .splashIntro{
@@ -639,21 +1299,27 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
       background-size: 225px auto, auto auto;
     }
 
-    h2.big-icon .icon, .ui-icon, .ui-icon, .ui-icon-searchfield:after {
-      background-image: url("../img/common/sprite@2x.png");
-      background-size: 274px auto;
-    }
-
     h1.logo{
       background-image: url("../img/common/Logo@2x.png");
       background-size: 150px auto;
     }
+
 
     .navBox span, .big-nav-icon.comments, .big-nav-icon.schedule-icon {
       background-image: url("../img/common/splashNav@2x.png");
       background-size: 205px auto;
     }
 
+    h2.big-icon .icon, .ui-icon, .ui-icon, .ui-icon-searchfield:after {
+      background-image: url("../img/common/sprite@2x.png");
+      background-size: 274px auto;
+    }
+
+    ul.bluebullet li
+    {
+        background-image:url("../img/common/blueBullet@2x.png");
+        background-size: 10px auto;
+    }
 
     .ui-listview .ui-btn.highlighted {
       background-image: url("../img/common/highlightBg@2x.png");
@@ -661,7 +1327,36 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
     }
 
+    .camera-box a {
+      background-image: url("../img/common/cameraIcon@2x.png"),
+                        url("../img/common/hStitch.gif"),
+                        url("../img/common/hStitch.gif"),
+                        url("../img/common/vStitch.gif"),
+                        url("../img/common/vStitch.gif");
+      background-size: 60px auto, auto auto, auto auto, auto auto, auto auto;
+    }
+
+
+    .comment-thanks .orangeCheck{
+      background-image: url("../img/common/orangeCheck@2x.png");
+      background-size: 93px auto;
+    }
+
+
+    .swipe-header span {
+      background-image: url("../img/common/sprite@2x.png");
+      background-size: 274px auto;
+    }
+
 }
+
+
+
+
+
+
+ul.bluebullet li a.ui-link{color: #D43734!important; text-decoration: none}
+
 
 
 

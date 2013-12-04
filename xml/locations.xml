@@ -1,0 +1,74 @@
+	<locations>
+	<entry>
+		<title>1. Peters Pub - 6pm</title>
+		<latitude>53.340936</latitude>
+		<longitude>-6.263291</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>2. Grogans - 6.30pm</title>
+		<latitude>53.34211</latitude>
+		<longitude>-6.262786</longitude>,
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>3. Dakota - 7pm</title>
+		<latitude>53.342545</latitude>
+		<longitude>-6.26073</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>4. O’Neill’s - 7.30pm</title>
+		<latitude>53.344236</latitude>
+		<longitude>-6.264042</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>5. O'Donoghues, Suffolk Street - 8pm</title>
+		<latitude>53.343673</latitude>
+		<longitude>-6.259678</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>6. Porterhouse, central - 8.30pm</title>
+		<latitude>53.343263</latitude>
+		<longitude>-6.259013</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>7. Bailey - 9pm</title>
+		<latitude>53.342251</latitude>
+		<longitude>-6.259464</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>8. The Duke - 9.30pm</title>
+		<latitude>53.342161</latitude>
+		<longitude>-6.25867</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>9. Café en Seine - 10pm</title>
+		<latitude>53.3412</latitude>
+		<longitude>-6.258477</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>10. 37 Dawson Street - 10.30pm</title>
+		<latitude>53.340777</latitude>
+		<longitude>-6.258605</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>11. The Dawson Lounge - 11pm</title>
+		<latitude>53.34097</latitude>
+		<longitude>-6.259216</longitude>
+		<link>#ThePubs</link>
+	</entry>
+	<entry>
+		<title>12.  Kehoes - 11.30pm</title>
+		<latitude>53.341994</latitude>
+		<longitude>-6.258787</longitude>
+		<link>#ThePubs</link>
+	</entry>
+</locations>

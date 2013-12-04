@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>12 Pubs of Xmas</title>
-        <meta name="description" content="The 12 Pubs of Christmas Mobile Website">
+        <title>12 Pubs of Christmas</title>
+        <meta name="description" content="">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -30,37 +30,161 @@
         <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
         <!-- Google maps API -->
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAvlR6Jd3_SZ8Zw4izQt_JXXtlwiaqS_mo&sensor=false"></script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36612067-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
     </head>
     <body>
 
 
 
 
-        <!-- 12 Pubs Splash page  ================================= -->
+
+        <!-- 12 Pubs Landing page  ================================= -->
         <div data-role="page" data-theme="a" id="SplashPage">
             <div data-role="content">
 
                <!-- Add splash layer and fade out after x -->
                <div class="ir splashIntro">
-                   12 Pubs of Xmas
+                   12 Pubs
                </div>
 
             </div><!-- /content -->
         </div><!-- /page -->
-        <!-- / 12 Pubs Splash page  ================================= -->
+        <!-- / 12 Pubs Landing page  ================================= -->
+
+
+
+
+
+
+
+
+
+
+        <!-- 12 Pubs Landing page  ================================= -->
+        <div data-role="page" data-theme="a" id="Homepage">
+            <div data-role="content">
+                <h1 class="logo ir">
+                    12 Pubs
+                </h1>
+
+                <!-- Splash page navigation buttons -->
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a class="navBox" href="#ThePubs">
+
+                            <span class="ThePubs ir">The Pubs</span>
+                            <strong>The Pubs</strong>
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a class="navBox" href="#PubMap">
+
+                            <span class="PubMap ir">The Map</span>
+                            <strong>The Map</strong>
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a class="navBox" href="#TheRules">
+                            <span class="TheRules ir">The Rules</span>
+                            <strong>The Rules</strong>
+                        </a>
+                    </div>
+
+                    <div class="ui-block-b">
+                        <a class="navBox" href="#Iflost">
+
+                            <span class="Iflost ir">If Lost</span>
+                            <strong>If Lost</strong>
+                        </a>
+                    </div>
+
+                </div>
+               <!-- /Splash page navigation buttons -->
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+        <!-- / 12 Pubs Landing page  ================================= -->
+
+
+
+
+
+
+
+
+
+        <!--  Pub Map ========================================== -->
+        <div data-role="page" data-theme="a" id="PubMap">
+
+            <!-- Standard header -->
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <h1>
+                    The Map
+                </h1>
+                <a data-role="button" data-rel="back" href="#" data-icon="back" data-iconpos="left" data-iconshadow="false" class="ui-btn-left">
+                </a>
+                <a data-role="button" href="#Homepage" data-icon="home" data-iconpos="left" class="ui-btn-right" data-iconshadow="false" data-ajax="false"  >
+                </a>
+            </div>
+            <!-- /Standard header -->
+            <div data-role="content">
+
+                <div class="ui-li ui-li-divider ui-bar-s ui-corner-top">
+
+                        <label for="txtMapSearch">
+                        </label>
+
+                        <input name="" id="txtMapSearch" placeholder="Search for a pub"
+                        value="" type="search">
+
+                        <a data-role="button" href="#" data-icon="target" data-inline="true" data-iconpos="notext" data-iconshadow="false" class="locate-me-btn"></a>
+
+                </div>
+
+                <div class="mapCanvas full-map"></div>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+        <!-- / Pub Map ========================================== -->
+
+
+
+
+
+
 
 
 
 
         <!--  The Pubs ========================================= -->
-        <div data-role="page" data-theme="a" id="Homepage">
+        <div data-role="page" data-theme="a" id="ThePubs">
+            <!-- Standard header -->
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <h1>
+                    The Pubs
+                </h1>
+                <a data-role="button" data-rel="back" href="#" data-icon="back" data-iconpos="left" data-iconshadow="false" class="ui-btn-left">
+                </a>
+                <a data-role="button" href="#Homepage" data-icon="home" data-iconpos="left" class="ui-btn-right" data-iconshadow="false" data-ajax="false"  >
+                </a>
+            </div>
+            <!-- /Standard header -->
             <div data-role="content">
 
-               <h1 class="logo ir">
-                    12 Pubs of Xmas
-                </h1>
-
-                <ul id="ThePubsList" data-role="listview" data-inset="true" data-filter="true" data-filter-theme="f" data-filter-placeholder="Filter by pub or time...">
+                <ul id="ThePubsList" data-role="listview" data-inset="true" data-filter="true" data-filter-theme="f" data-filter-placeholder="Filter pubs...">
                 </ul>
 
             </div><!-- /content -->
@@ -70,14 +194,21 @@
 
 
 
+
+
+
+
+
         <!--  The Pubs Details Page ===================================== -->
         <div data-role="page" data-theme="a" id="ThePubsDetailsPage">
             <!-- Standard header -->
             <div data-theme="a" data-role="header" data-position="fixed">
                 <h1>
-                    12 Pubs of Xmas
+                    The Pubs
                 </h1>
-                <a data-role="button" href="#Homepage" data-icon="back" data-iconpos="left" data-iconshadow="false" class="ui-btn-left">
+                <a data-role="button" data-rel="back" href="#" data-icon="back" data-iconpos="left" data-iconshadow="false" class="ui-btn-left">
+                </a>
+                <a data-role="button" href="#Homepage" data-icon="home" data-iconpos="left" class="ui-btn-right" data-iconshadow="false" data-ajax="false"  >
                 </a>
             </div>
             <!-- /Standard header -->
@@ -85,17 +216,110 @@
 
                 <div class="content-wrapper ui-btn-corner-all" data-theme="c">
 
+<!--                     <a class="head-map-wrap mapCanvas" href="#ThePubsDetailsPageFullMap">
+                        <img class="map-image" src="#" alt="">
+                    </a>
+
+ -->
                     <div class="mapCanvas half-map"></div>
 
                     <!-- Blue title -->
-                    <h2 id="pubTitle">
+                    <h2 id="stuServicesTitle">
                     </h2>
+
                     <h3>Description</h3>
-                    <p class="pub-description"></p>
+                    <p class="open-hours">
+                    </p>
+
+
                 </div>
                 <!-- /content-wrapper  -->
+
             </div><!-- /content -->
         </div><!-- /page -->
+
+
+
+
+
+
+
+
+
+
+        <!--  The Rules ======================================= -->
+        <div data-role="page" data-theme="a" id="TheRules">
+            <!-- Standard header -->
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <h1>
+                    The Rules
+                </h1>
+                <a data-role="button" data-rel="back" href="#" data-icon="back" data-iconpos="left" data-iconshadow="false" class="ui-btn-left">
+                </a>
+                <a data-role="button" href="#Homepage" data-icon="home" data-iconpos="left" class="ui-btn-right" data-iconshadow="false" data-ajax="false"  >
+                </a>
+            </div>
+            <!-- /Standard header -->
+            <div data-role="content">
+                <div class="content-wrapper ui-btn-corner-all" data-theme="c">
+
+                    <!-- Blue title -->
+                    <h2>
+                        Rules strictly enforced :)
+                    </h2>
+                    <ul class="bluebullet">
+                        <li>All beverages will be alcoholic. Shandy is prohibited.    </li>
+                        <li>All Applicants will move en mass at the instruction of the Adjudicator. There is a 5 minute window from the time the Adjudicator steps into the next Pub to allow for stragglers. Should Applicants not make it to the next Pub on the route in the 5 minute window they will incur a shot fine.</li>
+                        <li>Spilling your drink or the drink of a fellow Applicant will incur a shot fine.</li>
+                        <li>Slow drinking will not be tolerated, and will lead to a shot fine.</li>
+                        <li>Drinking the drink of another Applicant will result in a shot fine.</li>
+                        <li>Singing is punishable by way of a shot fine; this is at the Adjudicators discretion.</li>
+                    </ul>
+                </div>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+        <!-- / The Rules======================================= -->
+
+
+
+
+
+
+
+
+        <!--  If Lost======================================= -->
+        <div data-role="page" data-theme="a" id="Iflost">
+            <!-- Standard header -->
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <h1>
+                    If Lost
+                </h1>
+                <a data-role="button" data-rel="back" href="#" data-icon="back" data-iconpos="left" data-iconshadow="false" class="ui-btn-left">
+                </a>
+                <a data-role="button" href="#Homepage" data-icon="home" data-iconpos="left" class="ui-btn-right" data-iconshadow="false" data-ajax="false"  >
+                </a>
+            </div>
+            <!-- /Standard header -->
+            <div data-role="content">
+                <div class="content-wrapper ui-btn-corner-all" data-theme="c">
+
+                    <!-- Blue title -->
+                    <h2>
+                        Whoopsie Daisy
+                    </h2>
+                    <ul class="bluebullet">
+                        <li>Too much to drink -> <a href="https://www.hailocab.com/dublin/">Taxi for one</a></li>
+                        <li>Not enough -> <a href="#ThePubs">Find the next pub</a></li>
+
+                    </ul>
+                </div>
+
+            </div><!-- /content -->
+        </div><!-- /page -->
+        <!-- / If Lost ======================================= -->
+
+
 
 
 
